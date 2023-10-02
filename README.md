@@ -36,6 +36,8 @@ Implementa un sistema de CI/CD para el proyecto que incluya lo siguiente:
 * Configuración de un sistema de entrega continua para automatizar la implementación del software en un entorno de prueba o producción después de las pruebas exitosas.
 * Utilización de herramientas populares de CI/CD, como Jenkins, Travis CI, CircleCI, GitLab CI/CD, o cualquier otra que prefieras.
 
+* Es recomendable que utilices un diagrama (draw.io / lucidchart pueden servir) explicandonos como consideras la mejor opcion para el proceso CI/CD.
+   
 <a name="evaluación"></a>
 ## Evaluación
 Se evaluarán los siguientes aspectos:
