@@ -14,11 +14,27 @@ Desarrollar un servidor HTTP que simule una cuenta corriente de saldos, con la c
 <a name="requisitos-funcionales"></a>
 ## Requisitos Funcionales
 
-1. Implementar un servidor HTTP con los siguientes endpoints:
-   * POST /transaccion: Este endpoint permite a un usuario realizar una transacción monetaria. La transacción incluirá el ID del usuario, el monto de la transacción y el tipo (entrada o salida).
-   * GET /saldo/{usuario_id}: Este endpoint devuelve el saldo actual de un usuario dado su ID.
-2. Garantizar que no sea posible retirar dinero si un usuario no tiene suficiente saldo en su cuenta.
-3. Manejar adecuadamente los problemas de simultaneidad en las transacciones.
+ 1. Usuarios:
+    * Endpoint para agregar usuarios con la posibilidad de generar cuentas en pesos, dólares y bitcoin (ficticias).
+    * Funcionalidad de inicio de sesión para los usuarios.
+
+2. Seguridad:
+    * Posibilidad para que los usuarios generen un PIN de seguridad para llevar a cabo operaciones.
+
+3. Transacciones:
+    * Implementación de endpoints para realizar transacciones de entrada y salida en todas las cuentas.
+    * Capacidad de realizar transacciones de convertibilidad entre las cuentas propias de los usuarios.
+
+4. Historial:
+    * Mantenimiento de un historial detallado de todas las transacciones realizadas en cada cuenta.
+
+5. Saldos:
+    * Acceso a los saldos individuales de cada cuenta.
+    * Acceso al balance general de cada usuario.
+
+6. Seguridad en Transacciones:
+    * Precauciones para garantizar que las transacciones no afecten los saldos de manera incorrecta.
+    * Manejo adecuado de problemas de simultaneidad en las transacciones.
 
 <a name="requisitos-técnicos"></a>
 ## Requisitos Técnicos
